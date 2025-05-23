@@ -6,10 +6,13 @@
     },
     {
       "path": "./tsconfig.node.json"
-    }
+    },
   ],
   "compilerOptions": {
-  
+    "strict": true,
+     "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
