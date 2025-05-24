@@ -1,5 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { UNSAFE_createClientRoutesWithHMRRevalidationOptOut, useNavigate } from "react-router-dom";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Skeleton } from "@/components/ui/skeleton";
+
+
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -9,7 +18,9 @@ const HomePage: React.FC = () => {
       {/* Header existant */}
       
       <main className="flex-grow flex flex-col items-center justify-center bg-gray-50 p-4">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8">Bienvenue sur MonSite</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">Bienvenue sur JOY-CI</h1>
+        <Skeleton className="w-[100px] h-[20px] rounded-full" />
+
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
           {/* Bouton Personnel */}
@@ -39,9 +50,28 @@ const HomePage: React.FC = () => {
             <p className="text-sm">Services publics et informations</p>
           </button>
         </div>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>qui sommes nous??</AccordionTrigger>
+            <AccordionContent>
+              une plate forme pour le signialement des differents depots menage .
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger>comment nous joindre?</AccordionTrigger>
+            <AccordionContent>
+              <p> pour nous joindre bien vouloir ecrire au compte :franckyeptie@gmail.com </p>.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger>qui sont les createurs??</AccordionTrigger>
+            <AccordionContent>
+              joy-ci est un eplate forme realise par une equipe de devvelopeur dirrige par MONTHE YAMDJEU FRANC RUSSEL
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </main>
 
-      {/* Footer existant */}
     </div>
   );
 };

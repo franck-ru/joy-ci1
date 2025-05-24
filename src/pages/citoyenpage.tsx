@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Skeleton } from "@/components/ui/skeleton";
 
 type WasteType = 'ménager' | 'industriel' | 'médical' | 'plastique' | 'autre';
 
