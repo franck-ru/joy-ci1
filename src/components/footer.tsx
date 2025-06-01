@@ -16,8 +16,8 @@ const Footer: React.FC = () => {
           {/* Colonne 2 : Adresse */}
           <div>
             <h3 className="text-lg font-semibold mb-3">Adresse</h3>
-            <p className="text-gray-600">nkomkana-rue principal </p>
-            <p className="text-gray-600">yaounde, cameroun</p>
+            <p className="text-gray-600">nkomkana</p>
+            <p className="text-gray-600">Paris, France</p>
           </div>
 
           {/* Colonne 3 : Horaires */}

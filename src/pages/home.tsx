@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
 
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
-          {/* Bouton Personnel */}
+          {/* Bouton Personnel probleme de connexion  */}
           <button
             onClick={() => navigate("/personnel")}
             className="bg-blue-500 hover:bg-blue-600 text-white py-4 px-6 rounded-lg shadow-md transition transform hover:scale-105"

@@ -332,7 +332,7 @@ className = {`flex-1 py-2 px-4 rounded-md transition-all duration-200 ${activeTa
     name = "telephone"
     value = { formData.telephone }
     onChange = { handleInputChange }
-    placeholder = "77 123 45 67"
+    placeholder = "numero de telephone"
     className = "w-full px-3 py-3 border border-green-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
         />
         </div>
