@@ -64,7 +64,7 @@ interface WasteType {
 interface Account {
     id: number;
     username: string;
-    role: 'admin' | 'agent' | 'supervisor';
+    role: 'admin' | 'agent' |'supervisor';
     email: string;
     status: 'active' | 'inactive';
     lastLogin: string;

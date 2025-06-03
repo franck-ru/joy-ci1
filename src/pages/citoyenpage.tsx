@@ -40,7 +40,7 @@ const CitoyenPage: React.FC = () => {
         telephone: '',
         photo: ''
     });
-
+    // Exemple de données de signalements
     const [signalements, setSignalements] = useState<Signalement[]>([
         {
             id: '1',
@@ -183,9 +183,9 @@ const CitoyenPage: React.FC = () => {
     };
 
     return (
-        <div className= "min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50" >
+        <div className= "min-h-screen bg-gradient-to-br from--50 via-emerald-50 to-teal-50" >
         {/* Header */ }
-        < div className = "bg-white/80 backdrop-blur-sm shadow-sm border-b border-green-100" >
+        < div className = "bg-blue-400 backdrop-blur-sm shadow-sm border-b border-blue-100" >
             <div className="max-w-6xl mx-auto px-4 py-4" >
                 <div className="flex items-center justify-between" >
                     <button className="flex items-center text-green-600 hover:text-green-700 transition-colors" >
@@ -222,17 +222,17 @@ className = {`flex-1 py-2 px-4 rounded-md transition-all duration-200 ${activeTa
     </button>
     </div>
 
-{/* Onglet Signaler */ }
+{/* Onglet Signaler  pour le signialement de differnts depots*/ }
 {
     activeTab === 'signaler' && (
         <div className="space-y-8" >
-            {/* Bouton pour ouvrir le formulaire */ }
+            {/* Bouton pour ouvrir le formulaire de signialement */ }
     {
         !showForm && (
             <div className="text-center" >
                 <button
                   onClick={ () => setShowForm(true) }
-        className = "bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+        className = "bg-gradient-to-r from-yellow-500 to-emerald-600 hover:from-yellow-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             >
             <Plus className="w-6 h-6 inline mr-2" />
                 Nouveau Signalement
@@ -257,7 +257,7 @@ className = {`flex-1 py-2 px-4 rounded-md transition-all duration-200 ${activeTa
             </div>
 
             < div className = "grid grid-cols-1 md:grid-cols-2 gap-6" >
-                {/* Type de déchet */ }
+                {/* Type de déchet importe depuis le somets de la page */ }
                 < div >
                 <label className="block text-sm font-medium text-green-800 mb-2" >
                     Type de déchet *
@@ -307,20 +307,6 @@ className = {`flex-1 py-2 px-4 rounded-md transition-all duration-200 ${activeTa
         />
         </div>
 
-    {/* Email */ }
-    <div>
-        <label className="block text-sm font-medium text-green-800 mb-2" >
-            Email(optionnel)
-            </label>
-            < input
-    type = "email"
-    name = "email"
-    value = { formData.email }
-    onChange = { handleInputChange }
-    placeholder = "votre.email@exemple.com"
-    className = "w-full px-3 py-3 border border-green-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
-        />
-        </div>
 
     {/* Téléphone */ }
     <div>
@@ -364,7 +350,7 @@ className = {`flex-1 py-2 px-4 rounded-md transition-all duration-200 ${activeTa
                         ) : (
         <div className= "space-y-2" >
         <Camera className="w-8 h-8 text-green-400 mx-auto" />
-            <p className="text-sm text-green-600" > Cliquer pour ajouter une photo </p>
+            <p className="text-sm text-blue-600" > televerse une photo </p>
                 </div>
                         )
 }

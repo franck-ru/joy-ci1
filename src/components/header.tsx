@@ -16,11 +16,11 @@ const Header: React.FC = () => {
       {/* Logo + Nom du site */ }
       < div className = "flex items-center" >
         <img
-            src="/image/logo.jpg"
+            src="/image/joy-ci.png"
   alt = "Logo"
   className = "h-10 w-10 mr-3 rounded-full object-cover"
     />
-    <h1 className="text-2xl font-bold text-gray-800" > JOY-CI </h1>
+    <h1 className="text-2xl from-neutral-50 text-gray-800" > JOY-CI </h1>
       </div>
 
   {/* Menu déroulant pour le mode */ }
